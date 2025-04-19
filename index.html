@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Website</title>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark nav-bg">
+        <div class="container">
+            <a class="navbar-brand" href="#">Meu Website</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#clinica">A Clínica</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#servicos">Nossos Serviços</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#saulo">Dr. Saulo Magalhães</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12 text-left">
+                    <h1>Frase de Efeito</h1>
+                    <p class="lead">Breve Descrição</p>
+                    <a href="#contato" class="btn btn-primary btn-lg">Entre em Contato</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- A Clínica Section -->
+    <section id="clinica" class="py-5">
+        <div class="container">
+            <h2 class="text-left mb-4">A Clínica</h2>
+            <div class="row">
+                <div class="col-md-6" style="text-align: justify;">Na LOGOS Psicologia Clínica, entendemos que a saúde mental é um aspecto fundamental para o bem-estar e a qualidade de vida. Nossa missão é proporcionar um espaço seguro e acolhedor para adultos e crianças que enfrentam desafios emocionais e psíquicos. Aqui, cada paciente é tratado com empatia e respeito, reconhecendo a singularidade de sua jornada.<br>
+                    Oferecemos serviços de psicoterapia, onde profissionais altamente capacitados utilizam abordagens personalizadas para ajudar nossos pacientes a navegar por suas dificuldades, promovendo autoconhecimento e crescimento pessoal. Além disso, realizamos avaliações neuropsicológicas que visam identificar e compreender melhor as necessidades de nossos pacientes, contribuindo para um tratamento mais eficaz.
+                    <br>Para os profissionais da área, disponibilizamos supervisão clínica, um espaço para troca de experiências e aprendizado contínuo, fortalecendo a prática clínica e a qualidade do atendimento.
+                    <br>Na LOGOS, acreditamos que cada passo dado em direção ao cuidado mental é um passo em direção a uma vida mais plena e com propósito. Venha nos conhecer e descubra como podemos apoiá-lo em sua jornada.
+                    </div>
+                <div class="col-md-6 sticky-image-container text-center">
+                    <img src="img/01.png" alt="Imagem da clínica" class="clinica-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nossos Serviços Section -->
+    <section id="servicos" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Nossos Serviços</h2>
+            <div id="servicosCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#servicosCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#servicosCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#servicosCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#servicosCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#servicosCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="card mx-auto" style="max-width: 600px;">
+                            <div class="card-body text-center">
+                                <i class="fas fa-brain mb-4" style="font-size: 3rem; color: #06a8b7;"></i>
+                                <h3 class="card-title">Atendimento Psicoterápico Presencial e Online</h3>
+                                <p class="card-text">Seja para enfrentar desafios emocionais, melhorar relacionamentos ou simplesmente buscar autoconhecimento, o Dr. Saulo Magalhães oferece sessões de psicoterapia personalizadas, tanto presencialmente quanto online. Com uma abordagem empática e fundamentada, cada consulta é uma oportunidade para explorar suas questões e desenvolver estratégias para um propósito de vida.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card mx-auto" style="max-width: 600px;">
+                            <div class="card-body text-center">
+                                <i class="fas fa-clipboard-check mb-4" style="font-size: 3rem; color: #06a8b7;"></i>
+                                <h3 class="card-title">Avaliação Neuropsicológica</h3>
+                                <p class="card-text">Além disso, realizamos avaliações neuropsicológicas utilizando instrumentos e testes atualizados e reconhecidos pelo SATEPSI que visam identificar e compreender melhor as necessidades de nossos pacientes, contribuindo para um tratamento mais eficaz.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card mx-auto" style="max-width: 600px;">
+                            <div class="card-body text-center">
+                                <i class="fas fa-graduation-cap mb-4" style="font-size: 3rem; color: #06a8b7;"></i>
+                                <h3 class="card-title">Supervisão para Psicólogos</h3>
+                                <p class="card-text">Profissionais da saúde mental precisam de viver uma formação continuada. O Dr.  Saulo Magalhães oferece supervisão qualificada para psicólogos, proporcionando um espaço seguro e ético para discutir casos, refletir sobre práticas e aprimorar habilidades. Juntos, vamos fortalecer sua atuação e garantir que você se sinta confiante em sua prática clínica.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card mx-auto" style="max-width: 600px;">
+                            <div class="card-body text-center">
+                                <i class="fas fa-user-friends mb-4" style="font-size: 3rem; color: #06a8b7;"></i>
+                                <h3 class="card-title">Grupo de Estudos em Psicologia Clínica</h3>
+                                <p class="card-text">Participe do nosso grupo de estudos e amplie seu conhecimento em Psicologia Clínica. Este espaço colaborativo é ideal para psicólogos e estudantes que desejam discutir teorias, metodologias e práticas atuais. Com encontros regulares, você terá a chance de aprender com outros profissionais e enriquecer sua formação contínua.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card mx-auto" style="max-width: 600px;">
+                            <div class="card-body text-center">
+                                <i class="fas fa-graduation-cap mb-4" style="font-size: 3rem; color: #06a8b7;"></i>
+                                <h3 class="card-title">Cursos de Formação em Raciocínio Clínico e Psicoterapia</h3>
+                                <p class="card-text">Para aqueles que buscam aprofundar seus conhecimentos, oferecemos cursos especializados em Raciocínio Clínico e Psicoterapia. Nossas formações são ministradas com base em conteúdos atualizados e relevantes, capacitando participantes a desenvolver habilidades práticas e teóricas que fazem a diferença na prática clínica.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#servicosCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#servicosCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos Section -->
+    <!-- <section id="depoimentos" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Depoimentos</h2>
+            <div class="row">
+                <div class="col-md-4">Depoimento 1</div>
+                <div class="col-md-4">Depoimento 2</div>
+                <div class="col-md-4">Depoimento 3</div>
+            </div>
+        </div>
+    </section> -->
+
+    <section id="saulo" class="py-5">
+        <div class="container">
+            <h2 class="text-left mb-4">Saulo Magalhães</h2>
+            <div class="row">
+                <div class="col-md-6 sticky-image-container text-center">
+                    <img src="img/02.png" alt="Imagem da clínica" class="saulo-img">
+                </div>
+                <div class="col-md-6" style="text-align: justify;">Sou psicólogo clínico com 16 anos de experiência, apaixonado pela jornada do ser humano em busca de autoconhecimento e o propósito da vida. Com mestrado e doutorado em Psicologia Social, dedico minha carreira a entender as nuances das relações humanas e como elas impactam nossa saúde mental.
+                    <br><br>Minha abordagem é fundamentada na Clínica Fenomenológico-Existencial e na Logoterapia, permitindo que cada sessão seja um convite à reflexão profunda e à descoberta de significados na vida. Além de atender individualmente, também atuo como professor universitário, supervisor e pesquisador em Psicologia Clínica, compartilhando conhecimentos e práticas com futuras gerações de profissionais.
+                    <br><br>Sou casado há 18 anos e pai de três filhos, o que me proporciona uma rica perspectiva sobre a dinâmica familiar e os desafios que enfrentamos no cotidiano. Aqui, você encontrará um espaço acolhedor, onde juntos poderemos explorar suas questões, tecer reflexões existenciais e promover mudanças significativas.
+                    <br><br><b>Vamos iniciar essa jornada juntos?</b>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato Section -->
+    <section id="contato" class="py-5 bg-light">
+        <div class="container">
+            <h2>Onde estamos?</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <p style="text-align: justify;">No espaço LOGOS Psicologia Clínica, acreditamos que cada pessoa é única e merece um atendimento personalizado. Estamos aqui para apoiá-lo em sua jornada, seja você um paciente em busca de ajuda ou um profissional buscando se aprimorar. Entre em contato e agende uma consulta ou mais informações sobre nossos serviços. Sua saúde mental é a descoberta do seu propósito de vida é nossa missão. </p>
+                    <div id="social" class="row mt-4">
+                        <div class="col">
+                            <a href="https://wa.me/" target="_blank" class="me-4" style="font-size: 32px; color: #25D366;" >
+                                <i class="fab fa-whatsapp"></i>
+                                <span class="social">Nos chame no whastapp</span>
+                            </a>
+                            <a href="https://www.instagram.com/logospsicologiaclinica/" target="_blank" style="font-size: 32px; color: #E4405F;">
+                                <i class="fab fa-instagram"></i>
+                                <span class="social">Siga-nos na Instagram</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3800.3785929427563!2d-48.277184808314736!3d-18.925750444254007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94a4450445559c0f%3A0x98b6eef8bd8a42b0!2sGriff%20Shopping%20Uberl%C3%A2ndia!5e0!3m2!1spt-BR!2sbr!4v1745068283405!5m2!1spt-BR!2sbr" width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 Meu Website. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 

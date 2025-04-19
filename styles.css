@@ -1,0 +1,221 @@
+/* General Styles */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2, h3, h4{
+    color: #06a8b7 !important;
+}
+
+/* Sticky Image */
+.sticky-image-container {
+    position: sticky;
+    top: 20px;
+    width: 40%;
+    height: fit-content;
+    position: relative;
+}
+
+.sticky-image-container::after {
+    content: '';
+    position: absolute;
+    background-color: #06a8b7;
+    width: 33%;
+    height: 78%;
+    right: 31px;
+    top: 4%;
+    z-index: -1;
+}
+
+.img-clinica {
+    max-height: 80%;
+    position: relative;
+    z-index: 1;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://source.unsplash.com/random/1920x1080');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+}
+
+.hero-section h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.hero-section .lead {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+/* Sections */
+section {
+    padding: 80px 0;
+}
+
+section h2 {
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+/* Form Styles */
+.form-control {
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Button Styles */
+.btn-primary {
+    padding: 0.8rem 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    transition: transform 0.3s ease;
+}
+
+.nav-bg{
+    background-color: #06a8b7;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-section .lead {
+        font-size: 1.2rem;
+    }
+    
+    section {
+        padding: 60px 0;
+    }
+}
+
+/* Navbar Styles */
+.navbar {
+    padding: 1rem 0;
+    transition: all 0.3s ease;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    font-weight: 500;
+    margin: 0 0.5rem;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #343a40;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.clinica-img {
+    width: 65%;
+    margin-top: -60px;
+}
+
+.saulo-img {
+    width: 65%;
+    /* margin-top: -60px; */
+}
+
+/* Serviços Carousel */
+#servicosCarousel {
+    padding: 20px 0;
+}
+
+#servicosCarousel .carousel-item {
+    padding: 20px;
+}
+
+#servicosCarousel .card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+#servicosCarousel .card:hover {
+    transform: translateY(-5px);
+}
+
+#servicosCarousel .carousel-control-prev,
+#servicosCarousel .carousel-control-next {
+    width: 40px;
+    height: 40px;
+    background-color: #06a8b7;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 1;
+}
+
+#servicosCarousel .carousel-control-prev {
+    left: 0;
+}
+
+#servicosCarousel .carousel-control-next {
+    right: 0;
+}
+
+#servicosCarousel .carousel-indicators {
+    bottom: -40px;
+}
+
+#servicosCarousel .carousel-indicators button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #06a8b7;
+    opacity: 0.5;
+}
+
+#servicosCarousel .carousel-indicators button.active {
+    opacity: 1;
+}
+
+/* Social Media Icons */
+#social a {
+    transition: transform 0.3s ease, color 0.3s ease;
+    display: inline-block;
+    text-decoration: none;
+}
+
+#social a:hover {
+    transform: translateY(-3px);
+}
+
+#social a.text-white:hover {
+    color: #06a8b7 !important;
+}
+.social {
+    font-size: 18px;
+    color: #505050;
+    text-decoration: none !important;
+    text-emphasis: none;
+}
