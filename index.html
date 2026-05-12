@@ -44,11 +44,26 @@
 
     <!-- Hero -->
     <header class="hero" id="inicio">
-        <div class="hero-inner">
-            <p class="eyebrow">Clínica de Psicologia · Uberlândia, MG</p>
-            <h1>A descoberta<br>do seu propósito<br>de vida.</h1>
-            <p class="hero-sub">Psicoterapia, avaliação neuropsicológica e supervisão clínica — para quem busca profundidade, não apenas alívio.</p>
-            <a href="#contato" class="btn-outline">Entre em Contato</a>
+        <!-- Decorative background circle -->
+        <div class="hero-circle" aria-hidden="true"></div>
+
+        <div class="hero-grid">
+            <!-- Left: content -->
+            <div class="hero-content">
+                <div class="hero-content-inner">
+                    <p class="eyebrow">Psicologia Fenomenológico-Existencial · Logoterapia</p>
+                    <h1>A descoberta<br>do seu propósito<br>de vida.</h1>
+                    <div class="hero-rule" aria-hidden="true"></div>
+                    <div class="hero-footer">
+                        <p class="hero-sub">Psicoterapia, avaliação neuropsicológica e supervisão clínica — para quem busca profundidade, não apenas alívio.</p>
+                        <div class="hero-actions">
+                            <a href="#contato" class="btn-primary">Entre em Contato</a>
+                            <p class="hero-location">Uberlândia, MG</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </header>
 
@@ -217,6 +232,40 @@
                 toggle.setAttribute('aria-expanded', 'false');
             });
         });
+
+        // Services scroll reveal
+        // Respect reduced motion — skip if user prefers it
+        if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+            const headerLeft  = document.querySelector('.services-header-left');
+            const servicesNav = document.querySelector('.services-nav');
+            const serviceItems = [...document.querySelectorAll('.service-item')];
+
+            // Assign stagger delays via CSS custom property
+            const headerEls = [headerLeft, servicesNav];
+            headerEls.forEach((el, i) => {
+                el.style.setProperty('--reveal-delay', `${i * 100}ms`);
+                el.classList.add('will-animate');
+            });
+            serviceItems.forEach((el, i) => {
+                el.style.setProperty('--reveal-delay', `${i * 90}ms`);
+                el.classList.add('will-animate');
+            });
+
+            // Trigger header when section enters viewport
+            new IntersectionObserver(([entry], obs) => {
+                if (!entry.isIntersecting) return;
+                headerEls.forEach(el => el.classList.add('is-visible'));
+                obs.disconnect();
+            }, { threshold: 0.05 }).observe(document.querySelector('.services-header'));
+
+            // Trigger service rows when the list enters viewport
+            new IntersectionObserver(([entry], obs) => {
+                if (!entry.isIntersecting) return;
+                serviceItems.forEach(el => el.classList.add('is-visible'));
+                obs.disconnect();
+            }, { threshold: 0.05, rootMargin: '0px 0px -32px 0px' })
+                .observe(document.querySelector('.services-list'));
+        }
     </script>
 
 </body>
